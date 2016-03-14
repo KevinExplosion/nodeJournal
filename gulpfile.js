@@ -7,6 +7,7 @@ var utilities = require('gulp-util');
 var buildProduction = utilities.env.production;
 var del = require('del');
 var jshint = require('gulp-jshint');
+var moment = require('moment');
 
 gulp.task('concatInterface', function() {
   return gulp.src(['./js/browser.js', './js/signup-interface.js'])
