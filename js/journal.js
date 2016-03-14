@@ -8,7 +8,7 @@ exports.Journal.prototype.countWords = function(body) {
 }
 
 exports.Journal.prototype.getTodayDate = function() {
-  return moment().toDate();
+  return moment().format("MM/DD/YY");
 }
 
 exports.Journal.prototype.entry = function() {
