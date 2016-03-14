@@ -6,7 +6,7 @@ $(document).ready(function(){
     var title = $('#title').val();
     var body = $('#body').val();
     var newJournal = new Journal(title, body);
-    $('#final').append(newJournal.entry());
+    $('#final').append(newJournal.entry() + "<br> Number of Words in Entry " + newJournal.countWords(body));
   });
 });
 
